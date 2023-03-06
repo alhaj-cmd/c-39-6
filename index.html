@@ -5,10 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=a, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .go {
+  color: green;
+}
+.stop {
+  color: red;
+}
+    </style>
 </head>
 <body>
     <header>
         <h2>hello</h2>
+        <p id="start" >0</p>
+        <button id="timeData">start</button>
+        <button>stop</button>
+        <button>reset</button>
     </header>
+
+    <section>
+        <div >
+            <h3 id="my_box">0</h3>
+          </div>
+          <button onclick="flashText()" id="start">Start</button>
+          <button onclick="stopTextColor()" id="stop">Stop</button>
+    </section>
+
+    <!-- interval time zone -->
+    <section>
+        <h1>Set Interval Time Zone</h1>
+        <div id="strt">
+            <p id="timer"></p>
+        </div>
+        <button onclick="clearInterval(myInterval)" >start</button>
+    </section>
+
+
+    <!-- setInterval  -->
+    <h1>Set Interval Time Zone</h1>
+   
+        <p id="count"></p>
+   
+    <button id="countStr" >start</button>
+    <button id="countStp" >stop</button>
+    <button id="countRst" >reset</button>
+    <!-- js file link -->
+    <script src="./count.js"></script>
+    <script src="inter.js"></script>
+    <script src="./interval.js"></script>
 </body>
 </html>
